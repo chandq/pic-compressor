@@ -4,14 +4,14 @@
   "description": "Zero-dependency browser image compressor with presets, target-size iteration, long-image support, and batch processing.",
   "keywords": [
     "avif",
-    "browser",
-    "canvas",
+    "compressImage",
+    "compressImg",
     "compress",
     "compressor",
     "image",
     "jpeg",
     "png",
-    "typescript",
+    "pic-compressor",
     "webp"
   ],
   "homepage": "https://github.com/chandq/pic-compressor#readme",
@@ -25,11 +25,7 @@
     "url": "git+https://github.com/chandq/pic-compressor.git"
   },
   "files": [
-    "dist",
-    "docs",
-    "README.md",
-    "LICENSE",
-    "CHANGELOG.md"
+    "dist"
   ],
   "type": "module",
   "sideEffects": false,

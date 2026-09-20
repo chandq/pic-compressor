@@ -5,7 +5,7 @@ name: release
 
 on:
   push:
-    branches: [master]
+    branches: [main]
     paths:
       - 'src/**' # 当 src 目录下的文件变化时触发
       - 'package.json'
