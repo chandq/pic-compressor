@@ -1,6 +1,6 @@
 {
   "name": "pic-compressor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Zero-dependency browser image compressor with presets, target-size iteration, long-image support, and batch processing.",
   "keywords": [
     "avif",
