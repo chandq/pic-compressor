@@ -1,0 +1,90 @@
+{
+  "name": "pic-compressor",
+  "version": "0.1.0",
+  "description": "Zero-dependency browser image compressor with presets, target-size iteration, long-image support, and batch processing.",
+  "keywords": [
+    "avif",
+    "browser",
+    "canvas",
+    "compress",
+    "compressor",
+    "image",
+    "jpeg",
+    "png",
+    "typescript",
+    "webp"
+  ],
+  "homepage": "https://github.com/chandq/pic-compressor#readme",
+  "bugs": {
+    "url": "https://github.com/chandq/pic-compressor/issues"
+  },
+  "license": "MIT",
+  "author": "chandq",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandq/pic-compressor.git"
+  },
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "browser": "./dist/index.umd.js",
+  "types": "./dist/index.d.mts",
+  "unpkg": "./dist/index.umd.js",
+  "jsdelivr": "./dist/index.umd.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "default": "./dist/index.mjs"
+    },
+    "./umd": "./dist/index.umd.js",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true,
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint .",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "verify": "npm run lint && npm run format:check && npm run typecheck && npm run test && npm run build && npm run publint",
+    "publint": "publint",
+    "prepublishOnly": "npm run verify"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "@vitest/coverage-v8": "^5.0.1",
+    "jsdom": "^30.1.0",
+    "oxfmt": "^0.68.0",
+    "oxlint": "^1.83.0",
+    "publint": "^0.3.15",
+    "tsdown": "^0.23.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
