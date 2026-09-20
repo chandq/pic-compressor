@@ -12,6 +12,9 @@ Preserve user changes already present in the working tree. Do not reset, discard
 `pic-compressor` is a zero-runtime-dependency TypeScript library for client-side image compression. It targets modern
 browsers and WebViews and publishes ESM, CommonJS, UMD, and TypeScript declaration artifacts.
 
+Development and CI use the latest Node.js 22 and 24 releases. The published package's `engines` field describes package
+compatibility and does not imply that the current development toolchain can run on every listed Node.js version.
+
 The public API supports `File`, `Blob`, and `FileList` inputs, presets, target-file-size iteration, long-image sizing,
 batch concurrency, progress reporting, cancellation, and browser API fallbacks. Browser behavior is the runtime source
 of truth; Node.js is only a development and build environment.

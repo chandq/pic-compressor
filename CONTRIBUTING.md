@@ -38,7 +38,7 @@ assume that a new dependency or breaking change is required.
 
 Requirements:
 
-- Node.js `>=16`; use an active LTS release when possible
+- The latest Node.js 22 or 24 release, matching the CI matrix and current development-tool requirements
 - npm, using the committed `package-lock.json`
 - A browser-like environment for manual validation when changing decoding, Canvas, or MIME behavior
 

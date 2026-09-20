@@ -797,12 +797,12 @@ export function compressImage(
   return mapWithConcurrency(files, normalizedOptions.concurrency, (item, index) => {
     const itemOptions: NormalizedCompressOptions = normalizedOptions.onProgress
       ? {
-        ...normalizedOptions,
-        onProgress: (progress) => {
-          progresses[index] = progress;
-          reportProgress(normalizedOptions, progresses.reduce((sum, current) => sum + current, 0) / files.length);
+          ...normalizedOptions,
+          onProgress: (progress) => {
+            progresses[index] = progress;
+            reportProgress(normalizedOptions, progresses.reduce((sum, current) => sum + current, 0) / files.length);
+          }
         }
-      }
       : normalizedOptions;
     return compressOne(item, itemOptions, canvasSupported);
   });

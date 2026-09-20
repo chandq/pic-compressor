@@ -4,14 +4,14 @@
   "description": "Zero-dependency browser image compressor with presets, target-size iteration, long-image support, and batch processing.",
   "keywords": [
     "avif",
+    "compress",
     "compressImage",
     "compressImg",
-    "compress",
     "compressor",
     "image",
     "jpeg",
-    "png",
     "pic-compressor",
+    "png",
     "webp"
   ],
   "homepage": "https://github.com/chandq/pic-compressor#readme",
