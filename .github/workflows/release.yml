@@ -10,6 +10,7 @@ on:
       - 'src/**' # 当 src 目录下的文件变化时触发
       - 'package.json'
       - 'package-lock.json'
+      - 'tsdown.config.ts'
   # 允许手动重跑：若 npm 发布后 registry 副本同步滞后导致 manifest 同步失败，可直接重新触发（幂等，已同步则跳过）。
   workflow_dispatch:
 
