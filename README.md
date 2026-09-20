@@ -1,5 +1,11 @@
 # pic-compressor
 
+[![CI](https://github.com/chandq/pic-compressor/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/chandq/pic-compressor/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/pic-compressor?logo=npm)](https://www.npmjs.com/package/pic-compressor)
+[![Coverage](https://img.shields.io/badge/coverage-lines%2090.84%25-brightgreen?logo=vitest)](vitest.config.ts)
+[![License](https://img.shields.io/npm/l/pic-compressor)](LICENSE)
+[![Node.js](https://img.shields.io/node/v/pic-compressor)](package.json)
+
 独立的浏览器图片压缩工具，基于 Canvas，零运行时依赖，支持普通图片、长截图、全景图、Blob、FileList、目标体积迭代和取消操作。
 
 ## 安装
