@@ -1,6 +1,6 @@
 # pic-compressor
 
-[![CI](https://github.com/chandq/pic-compressor/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/chandq/pic-compressor/actions/workflows/ci.yml)
+[![CI](https://github.com/chandq/pic-compressor/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/chandq/pic-compressor/actions/workflows/release.yml)
 [![npm version](https://img.shields.io/npm/v/pic-compressor?logo=npm)](https://www.npmjs.com/package/pic-compressor)
 [![Coverage](https://img.shields.io/badge/coverage-lines%2090.84%25-brightgreen?logo=vitest)](vitest.config.ts)
 [![License](https://img.shields.io/npm/l/pic-compressor)](LICENSE)
@@ -36,7 +36,7 @@ const result = await compressImage(file, {
   mime: 'image/webp',
   targetFileSizeKB: 300,
   outputMode: 'compact',
-  onProgress: (progress) => console.log(`${progress}%`)
+  onProgress: progress => console.log(`${progress}%`)
 });
 ```
 
