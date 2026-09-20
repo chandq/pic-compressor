@@ -66,7 +66,7 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "verify": "npm run lint && npm run format:check && npm run typecheck && npm run test && npm run build && npm run publint",
-    "publint": "publint",
+    "publint": "publint --pack npm",
     "prepublishOnly": "npm run verify"
   },
   "devDependencies": {

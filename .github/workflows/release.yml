@@ -76,7 +76,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx standard-version -m "chore: release version %s"
-          git push --follow-tags origin master
+          git push --follow-tags origin main
           echo "tag=$(git describe --tags --abbrev=0)" >> "$GITHUB_OUTPUT"
       - name: Create GitHub Release
         env:
